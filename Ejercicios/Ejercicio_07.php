@@ -1,0 +1,24 @@
+<?php
+
+$dia=date("d/m/Y");
+
+echo "<br>",$dia;
+
+$diaA = date('z'); //Me da el día del año (0 a 365)
+
+if($diaA < 80 || ($diaA >=355 && $diaA<=365))
+{
+    echo "<br>Es verano";
+}
+else if($diaA >= 80 && $diaA <161)
+{
+    echo "<br>Es otoño";
+}
+else if($diaA >= 161 && $diaA <253)
+{
+    echo "<br>Es invierno";
+}
+else if($diaA >= 253 && $diaA <355)
+{
+    echo "<br>Es primavera";
+}
